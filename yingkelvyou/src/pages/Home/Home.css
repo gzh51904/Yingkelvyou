@@ -32,3 +32,8 @@ nav .navList li p{
     font-weight: 700;
     margin-top: .13333333333333333rem;
 }
+#home .banner{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}

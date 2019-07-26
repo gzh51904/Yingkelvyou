@@ -1,7 +1,15 @@
 import React, { Component } from 'react'
+import {Route,withRouter} from 'react-router-dom'
 import './Home.css'
 import Header from '../../components/Header.jsx'
 import Footer from '../../components/Footer.jsx';
+import Tickets from '../Tickets/Tickets.jsx'
+import Sliders from '../../components/Sliders.js';
+const Img = [
+    require('../../images/homeBannerPic1.jpg'),
+    require('../../images/homeBannerPic2.jpg'),
+    require('../../images/homeBannerPic3.jpg'),
+]
 class Home extends Component {
     constructor(){
         super()
@@ -13,7 +21,8 @@ class Home extends Component {
                 },
                 {
                     title:'门票',
-                    imgurl:require("../../images/menpiao.png")
+                    imgurl:require("../../images/menpiao.png"),
+                    path:'/tickets'
                 },
                 {
                     title:'目的地商城',
@@ -33,6 +42,11 @@ class Home extends Component {
                 }
             ]
         }
+        this.goto=this.goto.bind(this)
+    }
+    goto(path){
+        let {history} = this.props
+        history.push(path)
     }
     render() {
         let {navs} = this.state
@@ -42,8 +56,8 @@ class Home extends Component {
                 <nav>
                     <ul className="navList">
                         {
-                            navs.map(item=>(
-                                <li key={item.title}>
+                            navs.map((item)=>(
+                                <li key={item.title} onClick={this.goto.bind(this,item.path)}>
                                     <img src={item.imgurl} alt=""/>
                                     <p>{item.title}</p>
                                 </li>
@@ -51,8 +65,15 @@ class Home extends Component {
                         }
                     </ul>
                     <div className="banner">
-                        
+                    <Sliders
+                        images={Img}
+                        speed={1}
+                        delay={2}
+                        autoPlay={true}
+                        autoParse={true}
+                    />
                     </div>
+
                 </nav>
                 <Footer></Footer>
             </div>
@@ -60,5 +81,5 @@ class Home extends Component {
     }
 }
 
-
+Home = withRouter(Home)
 export default Home
