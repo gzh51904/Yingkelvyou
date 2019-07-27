@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import {Route, Switch, withRouter} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 
 import './Header.css'
 
  
-import SearchPage from '../pages/SearchPage/SearchPage.jsx'
 class Header extends Component {
     constructor() {
         super()
@@ -44,9 +43,6 @@ class Header extends Component {
                         <li className="drapdown-item">消息</li>
                     </ul>
                 </div>
-                    <Switch>
-                    <Route path='/searchPage' component={SearchPage} />
-                    </Switch>
             </div>
         )
     }

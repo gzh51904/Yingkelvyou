@@ -5,9 +5,6 @@ import Home from '../pages/Home/Home.jsx'
 
 let AllRouter = {
     Home,
-    // List,
-    // Cart,
-    // Mine
   }
 class Footer extends Component {
     constructor() {
@@ -63,7 +60,6 @@ class Footer extends Component {
                     navs.map(item=><Route key={item.name} path={item.path} component={AllRouter[item.name]}/>)
 
                 }
-                    {/* <Route path='/home' component={Home} ></Route> */}
                 </Switch>
             </div> 
         )
