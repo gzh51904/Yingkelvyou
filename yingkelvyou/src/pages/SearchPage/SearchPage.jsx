@@ -19,7 +19,7 @@ class SearchPage extends Component {
                     <label htmlFor="ss1">
                         <img src={require("../../images/fdj.png")} className="icon2" alt="" />
                     </label>
-                    <img src={require("../../images/left.png")} alt="" className="icon3"  onClick={this.goto.bind(this, '/home')}/>
+                    <img src={require("../../images/left.png")} alt="" className="icon3" onClick={this.goto.bind(this,'/home')}/>
                 </div>
                 <div className="contain">
                     <h6 className="recommend">目的地推荐</h6>

@@ -79,25 +79,29 @@ class Home extends Component {
                     imgurl: require('../../images/homeDestPic1.jpg'),
                     title: 'ZYGL-豪华国际五星酒店-曼谷+芭提雅',
                     type: '跟团游',
-                    price: 5790
+                    price: 5790,
+                    id:1
                 },
                 {
                     imgurl: require('../../images/homeDestPic2.jpg'),
                     title: '【本州欢乐深度合家欢】-四乐园七日游（EY名名）',
                     type: '跟团游',
-                    price: 9980
+                    price: 9980,
+                    id:2
                 },
                 {
                     imgurl: require('../../images/homeDescPic3.jpeg'),
                     title: '【放肆云南】昆明大理丽江泸沽湖双飞一卧6日',
                     type: '跟团游',
-                    price: 4780
+                    price: 4780,
+                    id:3
                 },
                 {
                     imgurl: require('../../images/homeDestPic4.jpg'),
                     title: '沙欢有礼：希拉穆仁草原+银肯响沙湾+呼和浩特双卧',
                     type: '跟团游',
-                    price: 1099
+                    price: 1099,
+                    id:4
                 },
             ],
             recommend: [
@@ -105,42 +109,49 @@ class Home extends Component {
                     imgurl: require('../../images/homeRecommendPic1.jpg'),
                     title: '美丽中国城钻石路线+德宏站',
                     type: '跟团游',
-                    price: 1500
+                    price: 1500,
+                    id:5
                 },
                 {
                     imgurl: require('../../images/homeRecommendPic2.jpg'),
                     title: '美丽中国城钻石路线-茂名站',
                     type: '跟团游',
-                    price: 1290
+                    price: 1290,
+                    id:6
                 },
                 {
                     imgurl: require('../../images/homeRecommendPic3.jpg'),
                     title: '魅力中国城钻石路线+黔东南站5日游',
                     type: '跟团游',
-                    price: 2450
+                    price: 2450,
+                    id:7
                 },
                 {
                     imgurl: require('../../images/homeRecommendPic4.jpg'),
                     title: '美丽中国钻石路线-盘锦站',
                     type: '跟团游',
-                    price: 690
+                    price: 690,
+                    id:8
                 },
             ],
             intros:[
                 {
                     title:'西藏江南，醉美林芝！5分钟带您欣赏林芝一年十二景',
                     location:'西藏 情侣 蜜月 购物',
-                    imgurl:require('../../images/homeIntroPic1.jpg')
+                    imgurl:require('../../images/homeIntroPic1.jpg'),
+                    id:9
                 },
                 {
                     title:'全国最全赏樱攻略，攒个周末说走就走！',
                     location:'北京 摄影 亲子 情侣',
-                    imgurl:require('../../images/homeIntroPic2.jpeg')
+                    imgurl:require('../../images/homeIntroPic2.jpeg'),
+                    id:10
                 },
                 {
                     title:'一年疯玩在于春！送你一份四海八荒青春踏青攻略',
                     location:'全国 情侣 摄影',
-                    imgurl:require('../../images/homeIntroPic3.jpeg')
+                    imgurl:require('../../images/homeIntroPic3.jpeg'),
+                    id:11
                 }
             ],
             favorite:[
@@ -148,16 +159,27 @@ class Home extends Component {
                     imgurl:require('../../images/homeFavoPic1.jpg'),
                     title:'内蒙古呼伦贝尔大草原完美8日深度游',
                     type:'自由行',
-                    price:2180
+                    price:2180,
+                    id:12
                 }
             ]
 
         }
         this.goto = this.goto.bind(this)
+        this.gotodetails = this.gotodetails.bind(this)
     }
     goto(path) {
         let { history } = this.props
         history.push(path)
+    }
+    gotodetails(item){
+        console.log(item)
+        let { history } = this.props
+        history.push({
+            pathname: '/details',
+            search: '?id=' + item.id,
+            state: item 
+        })
     }
     render() {
         let { navs, tipes_navs, dest, recommend, intros, favorite } = this.state
@@ -210,7 +232,7 @@ class Home extends Component {
                         <ul>
                             {
                                 dest.map(item => (
-                                    <li key={item.title}>
+                                    <li key={item.title} onClick={this.gotodetails.bind(this,item)}>
                                         <img src={item.imgurl} alt={item.title}/>
                                         <div className="sec2Product">
                                             <p>{item.title}</p>
@@ -236,7 +258,7 @@ class Home extends Component {
                         <ul>
                             {
                                 recommend.map(item => (
-                                    <li key={item.title}>
+                                    <li key={item.title} onClick={this.gotodetails.bind(this,item)}>
                                         <img src={item.imgurl} alt={item.title}/>
                                         <div className="sec2Product">
                                             <p>{item.title}</p>
@@ -264,7 +286,7 @@ class Home extends Component {
                         <ul>
                             {
                                 intros.map(item=>(
-                                    <li key={item.title}>
+                                    <li key={item.title} onClick={this.gotodetails.bind(this,item)}>
                                         <img src={item.imgurl} alt={item.title}/>
                                         <div className="tweet_container">
                                             <p>{item.title}</p>
@@ -285,7 +307,7 @@ class Home extends Component {
                         <ul>
                             {
                                 favorite.map(item => (
-                                    <li key={item.title}>
+                                    <li key={item.title} onClick={this.gotodetails.bind(this,item)}>
                                         <img src={item.imgurl} alt={item.title}/>
                                         <div className="sec2Product">
                                             <p>{item.title}</p>

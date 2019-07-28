@@ -148,10 +148,10 @@ class Tickets extends Component {
         let { history } = this.props
         history.push(path)
     }
-
     render() {
         let { navs, scenic, tabs, data,data2 } = this.state
         let { url, path } = this.props.match
+        console.log(this.props.match)
         return (
             <div className="Tickets">
                 <div className="header">
