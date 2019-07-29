@@ -29,10 +29,10 @@
 }
 .custiomerService{
     display: inline-block;
-    width: .7rem;
-    height: .7rem;
-    margin-left: .21333333333333335rem;
-    margin-bottom: .05333333333333334rem;
+    width: .9333333333333333rem;
+    height: .8rem;
+    padding-left: .21333333333333335rem;
+    padding-bottom: .05333333333333334rem;
     vertical-align: middle;
     position: relative;
 }

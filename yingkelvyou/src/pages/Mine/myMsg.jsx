@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Icon, Tabs } from 'antd';
 import '../../css/reset.css';
 import './myMsg.scss';
-import '../../assets/js/rem.js';
 
 const { TabPane } = Tabs;
 

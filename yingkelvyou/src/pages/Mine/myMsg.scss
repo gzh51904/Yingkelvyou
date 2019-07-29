@@ -29,27 +29,12 @@
     .tabNav{
         background-color: #fff;
         text-align: center;
-        // ul{
-        //    display:flex;
-        //     li{
-        //         width: 33.2%;
-        //         font-size: .32rem;
-        //         line-height: 1;
-        //         flex:1;
-        //         padding: .4121212121212121rem 0;
-        //         font-size: .4rem;
-        //         span{
-        //             color: inherit;
-        //             font-size: .32rem;
-        //             line-height: 1;
-        //         }
-        //     }
-        // }
+        
 
         .ant-tabs-nav{
             .ant-tabs-tab{
-                margin:0;
-                padding:10px 34px;
+                margin:0 .5rem;
+                padding:0;
             }
             .ant-tabs-tab-active{
                 color: #a50b73;

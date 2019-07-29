@@ -3,30 +3,59 @@ import { withRouter} from 'react-router-dom'
 import { Icon,Avatar } from 'antd';
 import '../../css/reset.css';
 import './Mine.scss';
-import '../../assets/js/rem.js';
 import Footer from '../../components/Footer.jsx';
 
 
 
+
 class Mine extends Component {
+
     constructor(){
         super()
+        this.state = {
+            token:'登录/注册'
+        }
         this.goto = this.goto.bind(this)
     }
-    goto(path){
+    goto(){
+        if(this.state.token === "登录/注册" ){
+            let {history} = this.props
+            history.push('/login')
+        }
+        
+    }
+    gotoOther(path){
         let {history} = this.props
         history.push(path)
     }
 
 
 
+    componentDidMount(){
+        let token1 = localStorage.getItem('uphone')
+        if(token1){
+            this.setState({
+                token:token1
+                
+            })
+            console.log(this.state);
+
+            
+        }
+    }
+
+
+
+
+
     render() {
+        let {token} = this.state;
         return (
             <div className="mine">
                 <div className="userInfo">
                     <div className="clearfix">
-                        <span style={{color:'#fff'}}  className="fl"><Icon type="setting" /></span>
-                        <span style={{color:'#fff'}} onClick={this.goto.bind(this,'/mymsg')} className="fr"><Icon type="message" /></span>
+                        <span style={{color:'#fff'}}  className="fl"><Icon onClick={this.gotoOther.bind(this,'/setting')} type="setting" /></span>
+                        <span style={{color:'#fff'}} onClick={this.gotoOther.bind(this,'/mymsg')} className="fr"><Icon type="message" /></span>
                         <div className="imgVip"></div>
                     </div>
 
@@ -37,13 +66,13 @@ class Mine extends Component {
 
                     <div className="logAndReg clearfix">
                         <Avatar className="head fl" size={64} icon="user" />
-                        <span onClick={this.goto.bind(this,'/login')} className="login fl">登录/注册</span>
+                        <span onClick={this.goto} className="login fl">{token}</span>
                     </div>
                 </div>
 
                 <div className="list">
-                    <div onClick={this.goto.bind(this,'/allList')}  className="myList"><Icon type="unordered-list" /> <span>我的订单</span></div>
-                    <div onClick={this.goto.bind(this,'/goodsList')}  className="goodsList"><Icon type="calendar" /><span>商品订单</span></div>
+                    <div onClick={this.gotoOther.bind(this,'/allList')}  className="myList"><Icon type="unordered-list" /> <span>我的订单</span></div>
+                    <div onClick={this.gotoOther.bind(this,'/goodsList')}  className="goodsList"><Icon type="calendar" /><span>商品订单</span></div>
 
 
                 </div>
@@ -82,7 +111,7 @@ class Mine extends Component {
                             <p>浏览历史</p>
                         </li>
 
-                        <li onClick={this.goto.bind(this,'/shop')}>
+                        <li onClick={this.gotoOther.bind(this,'/shop')}>
                             <Icon style={{color:'#50b8ff'}} type="shop" />
                             <p>附近门店</p>
                         </li>
