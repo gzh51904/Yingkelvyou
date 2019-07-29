@@ -16,7 +16,8 @@ class Home extends Component {
             navs: [
                 {
                     title: '酒店',
-                    imgurl: require("../../images/jiudian.png")
+                    imgurl: require("../../images/jiudian.png"),
+                    path:'/hotel'
                 },
                 {
                     title: '门票',
@@ -139,19 +140,22 @@ class Home extends Component {
                     title:'西藏江南，醉美林芝！5分钟带您欣赏林芝一年十二景',
                     location:'西藏 情侣 蜜月 购物',
                     imgurl:require('../../images/homeIntroPic1.jpg'),
-                    id:9
+                    id:9,
+                    price:2180,
                 },
                 {
                     title:'全国最全赏樱攻略，攒个周末说走就走！',
                     location:'北京 摄影 亲子 情侣',
                     imgurl:require('../../images/homeIntroPic2.jpeg'),
-                    id:10
+                    id:10,
+                    price:7777,
                 },
                 {
                     title:'一年疯玩在于春！送你一份四海八荒青春踏青攻略',
                     location:'全国 情侣 摄影',
                     imgurl:require('../../images/homeIntroPic3.jpeg'),
-                    id:11
+                    id:11,
+                    price:2333,
                 }
             ],
             favorite:[

@@ -28,6 +28,7 @@ nav .navList li img {
     width: 1.1733333333333333rem;
     height: 1.1733333333333333rem;
     border-radius: 50%;
+    margin:0 auto;
 }
 
 nav .navList li p {
@@ -223,6 +224,7 @@ main{
     width: 2.506666666666667rem;
     height: 2.6133333333333333rem;
     vertical-align: top;
+    display: inline-block;
 }
 .intro ul li .tweet_container{
     display: inline-block;
@@ -259,6 +261,7 @@ main{
     width: .6933333333333334rem;
     margin-right: .13333333333333333rem;
     vertical-align: middle;
+    display: inline;
 }
 .guess span{
     color: #c31f9b;

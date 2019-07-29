@@ -6,14 +6,13 @@ import './Details.css'
 class Details extends Component {
     constructor() {
         super()
-        this.goback = this.goback.bind(this)
+        this.back = this.back.bind(this)
 
     }
-    goback(path) {
-        let { history } = this.props
-        history.push(path)
+    back(){
+        let {history} = this.props;
+        history.goBack();
     }
-
     render() {
         let { state } = this.props.location
         console.log(state)
@@ -21,7 +20,7 @@ class Details extends Component {
             <div className="detailsheader">
                 <div className="dheaderbtn">
                     <button className="dheaderbtnNormal">
-                        <img src={require('../../images/left.png')} alt="" onClick={this.goback.bind(this, '/home')} />
+                        <img src={require('../../images/left.png')} alt="" onClick={this.back} />
                     </button>
                 </div>
                 <h1 className="detailstitle">产品详情</h1>
