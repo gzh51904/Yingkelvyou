@@ -23,7 +23,7 @@ class Reg extends Component {
         this.tel=e.target.value
         console.log(this.tel)
         var reg=/^1[34578]\d{9}$/;
-        if(reg.test(this.tel) == false){
+        if(reg.test(this.tel) === false){
             notification.open({
                 message: '提示',
                 description:
@@ -44,7 +44,7 @@ class Reg extends Component {
 
         this.password=e.target.value
         var reg=/^\w{6,20}$/;
-        if(reg.test(this.password)==false){
+        if(reg.test(this.password)===false){
             notification.open({
                 message: '提示',
                 description:
@@ -75,7 +75,7 @@ class Reg extends Component {
 
                 })
                 .then(({data}) => {
-                    if(data.code == 1000){
+                    if(data.code === 1000){
                         console.log("注册成功")
                         let {history} = this.props;
                         history.push('/login')
