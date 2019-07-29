@@ -7,26 +7,27 @@ class Details extends Component {
     constructor() {
         super()
         this.goback = this.goback.bind(this)
+
     }
     goback(path) {
         let { history } = this.props
         history.push(path)
     }
+
     render() {
-        console.log(this.props)
         let { state } = this.props.location
         console.log(state)
         return (<div>
             <div className="detailsheader">
                 <div className="dheaderbtn">
                     <button className="dheaderbtnNormal">
-                        <img src={require('../../images/left.png')} alt="" onClick={this.goback.bind(this,'/home')} />
+                        <img src={require('../../images/left.png')} alt="" onClick={this.goback.bind(this, '/home')} />
                     </button>
                 </div>
                 <h1 className="detailstitle">产品详情</h1>
             </div>
             <div className="topbanner">
-                <img src={require('../../images/detailsbanner1.jpg')} alt="" />
+                <img src={state.imgurl} alt="" />
                 <span className="detailstype">{state.type}</span>
             </div>
             <div className="basemsg">
@@ -87,19 +88,19 @@ class Details extends Component {
                     <div className="detailsMenuItem">
                         <span>咨询</span>
                         <span>
-                            <img src={require('../../images/detailszixun.png')} alt=""/>
+                            <img src={require('../../images/detailszixun.png')} alt="" />
                         </span>
                     </div>
                     <p className="detailsMenuItem">
                         <span>收藏</span>
                         <span>
-                            <img src={require('../../images/detailsstar.png')} alt=""/>
+                            <img src={require('../../images/detailsstar.png')} alt="" />
                         </span>
                     </p>
                     <p className="detailsMenuItem">
                         <span>店铺</span>
                         <span>
-                            <img src={require('../../images/detailsdianpu.png')} alt=""/>
+                            <img src={require('../../images/detailsdianpu.png')} alt="" />
                         </span>
                     </p>
                 </div>

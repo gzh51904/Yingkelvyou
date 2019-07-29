@@ -181,6 +181,7 @@ class Home extends Component {
             state: item 
         })
     }
+
     render() {
         let { navs, tipes_navs, dest, recommend, intros, favorite } = this.state
         return (
