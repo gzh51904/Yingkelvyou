@@ -4,6 +4,8 @@ import '../../css/reset.css';
 import './allList.scss';
 import '../../assets/js/rem.js';
 import imgurl from "../../assets/img/list_left.png"
+import Axios from 'axios';
+
 
 
 
@@ -40,7 +42,12 @@ class List extends Component {
         })
 
     }
-
+    componentDidMount(){
+        let uphone = localStorage.getItem('uphone');
+        Axios.get('http://39.107.12.210:1904/good/'+uphone).then(({data})=>{
+            console.log('---------==',data);
+        })
+    }
 
     render() {
         let categoryArr = ['全部订单', '机票', '酒店', '火车票', '门票', '旅游路线', '签证'];
