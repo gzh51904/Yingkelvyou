@@ -77,7 +77,7 @@ class Login extends Component {
                     </div>
                 </div>
 
-                <div className="content">
+                <div className="input">
                     <div className="user">
                         <ul>
                             <li><Input onBlur = {this.Uphone}  placeholder="请输入帐号" /></li>
