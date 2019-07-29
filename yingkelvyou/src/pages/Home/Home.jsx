@@ -16,7 +16,8 @@ class Home extends Component {
             navs: [
                 {
                     title: '酒店',
-                    imgurl: require("../../images/jiudian.png")
+                    imgurl: require("../../images/jiudian.png"),
+                    path: '/hotel'
                 },
                 {
                     title: '门票',

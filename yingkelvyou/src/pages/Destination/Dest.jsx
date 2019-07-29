@@ -12,7 +12,7 @@ class Dest extends Component {
                 {
                     iconnav: '/img/group1.png',
                     title: '门票',
-                    // path:'/'
+                    path:'/tickets'
                 },
                 {
                     iconnav: '/img/group2.png',
