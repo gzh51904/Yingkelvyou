@@ -62,16 +62,14 @@
 /* -----------------------------------------------------导航-------------------------------------------------------------------- */
 
 .iconnavi {
-    display: -webkit-box;
     display: flex;
     overflow: scroll;
+    flex-wrap: nowrap;
     width: 100%;
     border-bottom: .26666666666666666rem solid #f7f7f7;
     padding-bottom: .4266666666666667rem;
 }
 .iconnavi .box {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
     width: 22%;
     min-width: 22%;
