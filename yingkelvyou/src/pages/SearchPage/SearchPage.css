@@ -1,0 +1,76 @@
+#SearchPage{
+    color: #515a6e;
+}
+.hd {
+    background: #c31f9b;
+    height: 1.1733333333333333rem;
+    padding: .18666666666666668rem .4rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.hd input{
+    font-size: .37333333rem;
+    width: 6.666666666666667rem;
+    height: .8rem;
+    padding-left: 1.5466666666666666rem;
+    border-radius: .3466666666666667rem;
+    border: 0 none;
+    box-sizing: border-box;
+    margin-left: .4rem;
+}
+.hd .icon2{
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    left: 1.0666666666666667rem;
+    top: .3333333333333333rem;
+}
+.hd .icon3{
+    position: absolute;
+    left: .2rem;
+    top: .35rem;
+    width: .5rem;
+    height: .5rem;
+}
+.contain .recommend{
+    padding-left: .4666666666666667rem;
+    margin-top: .7rem;
+    font-size: .32rem;
+    color:#515a6e;
+}
+.recommendListBox{
+    padding-left: .4666666666666667rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: .4rem;
+}
+.recommendListBox p{
+    background: #f4f4f4;
+    margin-right: .26666666666666666rem;
+    width: 2rem;
+    height: .8133333333333334rem;
+    text-align: center;
+    line-height: .8133333333333334rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: .26666666666666666rem;
+}
+.btnBox{
+    margin-top: .76rem;
+    padding-bottom: 1.2rem;
+    width: 100%;
+    height: .8666666666666667rem;
+}
+.btnBox p{
+    width: 3.8666666666666667rem;
+    height: 1.2133333333333334rem;
+    margin: auto;
+    color: #fff;
+    border-radius: .06666666666666667rem;
+    font-size: .45333333rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2133333333333334rem;
+    background: -webkit-gradient(linear,left top,right top,from(#cf19a9),to(#fc81a7));
+    background: linear-gradient(90deg,#cf19a9,#fc81a7);
+}

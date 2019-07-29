@@ -1,0 +1,105 @@
+.Login{
+    .header{
+        width: 100%;
+        height: 2.96rem;
+        background: url(../../images/topbglog.png);
+        position: relative;
+        background-size: contain;
+
+        .close{
+            width: .5333333333333333rem;
+            height: .5333333333333333rem;
+            background: url(../../images/closelog.png);
+            background-size: contain;
+            position: absolute;
+            left: .4rem;
+            top: .4rem;
+        
+        }
+
+        .loginText{
+            font-size: .45333333rem;
+            color: #fff;
+            text-align: center;
+            padding-top: .4rem;
+            height: 33%;
+
+
+        }
+
+        .botText{
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            left:0rem;
+            top:2rem;
+
+            p{
+                color: #fff;
+                font-size: .4rem;
+                height: 1.1066666666666667rem;
+                opacity: .6;
+                text-align: center;
+                width:5rem;
+            }
+        }
+    }
+
+    .content{
+        margin: 0 .6666666666666666rem;
+        .user{
+            ul{
+                li{
+                    height: 1.4133333333333333rem;
+                    font-size: .42666667rem;
+                    color: #969696;
+                    border-bottom: 1px solid #cfcfcf;
+                    padding: .4666666666666667rem 0;
+                    box-sizing: border-box;
+                    position: relative;
+                    .ant-input{
+                        border: none;
+                        overflow: visible;
+                        outline:none;
+                    }
+                }
+            }
+        }
+
+        .forgetPassword{
+            height: 1.4133333333333333rem;
+            span{
+                float: right;
+                font-size: .42666667rem;
+                line-height: 1.4133333333333333rem;
+            }
+        }
+
+        .loginBtn{
+            display: block;
+            height: 1.1733333333333333rem;
+            text-align: center;
+            line-height: 1.1733333333333333rem;
+            background: #af0e7f;
+            border-radius: .13333333333333333rem;
+            margin-bottom: .4rem;
+            font-size: .45333333rem;
+            color: #fff;
+        }
+
+        .signBtn{
+            height: 1.1733333333333333rem;
+            text-align: center;
+            line-height: 1.1733333333333333rem;
+            border: 1px solid #cfcfcf;
+            border-radius: .13333333333333333rem;
+            font-size: .45333333rem;
+            color: #636363;
+        }
+
+
+    }
+
+
+
+}

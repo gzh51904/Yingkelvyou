@@ -1,0 +1,45 @@
+.setting{
+   .header{
+        text-align: center;
+        position: relative;
+        height: 1.17333rem;
+        background-image: linear-gradient(98deg,#d11aab,#a50b73);
+        color: #fff;
+        line-height: 1.17333rem;
+        font-size: 18px;
+        .back{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.17333rem;
+            height: 1.17333rem;
+            padding: .26667rem;
+        }
+    }
+    .settingList{
+        margin: .26666666666666666rem 0;
+        background: #fff;
+        div{
+            position: relative;
+            font-size: .4rem;
+            height: 1.2rem;
+            padding-left: .4rem;
+            box-shadow: inset 0 -1px 0 0 #d6d6d6;
+            line-height: 1.2rem;
+
+        }
+        .go{
+            position: absolute;
+            right: .13333333333333333rem;
+            top: .26666666666666666rem;
+            color: #d6d6d6;
+        }
+    }
+    .exit{
+        font-size: .4rem;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        text-align: center;
+        background: #fff;
+    }
+}

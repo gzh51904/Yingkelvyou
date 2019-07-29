@@ -1,0 +1,119 @@
+.nebShop{
+    padding:1.2rem 0 0 0;
+    .header{
+        width: 100%;
+        background: #c31f9b;
+        height: 1.1733333333333333rem;
+        padding: .18666666666666668rem .4rem;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+
+        i{
+            font-size:.5rem;
+            color: #fff;
+            font-weight: 900;
+        }
+
+        input{
+            font-size: .37333333rem;
+            width: 7.5rem;
+            height: .8rem;
+            padding-left: .88rem;
+            border-radius: .3466666666666667rem;
+            border: 0 none;
+            margin-left: .9333333333333333rem;
+            outline: none;
+        }
+
+        .search{
+            font-size: .6rem;
+            color: #bbbbbb;
+            position: absolute;
+            top:.3rem;
+            left:2rem;
+
+        }
+
+    
+    } 
+    
+    .shopList{
+        ul{
+            padding:0 .4rem;
+            li{
+                margin-bottom: .26666666666666666rem;
+                border-bottom: 1px solid #ddd;
+
+                .info{
+                    display: flex;
+                    margin-top: .4rem;
+                    height: 3.066666666666667rem;
+
+                    .leftImg{
+                        width: 2.2933333333333334rem;
+                        height: 3.066666666666667rem;
+                        flex:1;
+                        margin-right: .6rem;
+                        img{
+                            width: 2.2933333333333334rem;
+                            height: 2.2933333333333334rem;
+                        }
+                    }
+                    .nameAndAddress{
+                        .shopName{
+                            font-size: .37333333rem;
+                            color: #000;
+                            line-height: .56rem;
+                            height: 1.0933333333333333rem;
+                            margin-bottom: .2rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                        }
+                        .shopAddress{
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            font-size: .32rem;
+                            color: #666;
+                            line-height: .5333333333333333rem;
+                        }
+                    }
+
+                    .distance{
+                        text-align: center;
+                        .length{
+                            font-size: .29333333rem;
+                            color: #000;
+                            line-height: .56rem;
+                            height: .56rem;
+                            margin-bottom: .2rem;
+                            width: 2.1333333333333333rem;
+                        }
+                        span{
+                            width: .76rem;
+                            height: .76rem;
+                            border-radius: 50%;
+                            display: inline-block;
+
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                            
+                        }
+                    }
+                    
+                }
+                
+
+
+            }
+        }
+    }
+}
