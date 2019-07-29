@@ -4,7 +4,7 @@
 
 ​	1、官网：https://newm.yktour.com.cn/
 
-​	2、上线网址： 
+​	2、上线网址： http://39.107.12.210:3000/
 
 ​	3、GitHub仓库地址：git@github.com:gzh51904/Yingkelvyou.git
 
