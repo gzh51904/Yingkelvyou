@@ -20,7 +20,12 @@ import SearchPage from './pages/SearchPage/SearchPage.jsx'
 import Tickets from './pages/Tickets/Tickets.jsx'
 import Details from './pages/Details/Details.jsx'
 
-import 'lib-flexible'
+import Dest from './pages/Destination/Dest.jsx'
+import Hotel from './pages/Hotel/Hotel.jsx'
+import Scenicmore from './pages/Scenicmore/Scenicmore.jsx'
+// import SearchPage from './pages/SearchPage/SearchPage.jsx'
+import './assets/js/rem'
+// import 'lib-flexible'
 import {Route, Switch, Redirect} from 'react-router-dom'
 // import './rem.js'
 function App() {
@@ -40,8 +45,9 @@ function App() {
         <Route path='/reg' component={Reg}/>
         <PrivateRoute path='/shop' component={Shop}/>
         <Route path='/SearchPage' component={SearchPage} />
-        {/* <Route path ='/dest' component={Dest}/> */}
-        {/* <Route path ='/scenicmore' component={Scenicmore}/> */}
+        <Route path ='/dest' component={Dest}/>
+        <Route path ='/hotel' component={Hotel}/>
+        <Route path ='/scenicmore' component={Scenicmore}/>
         <Redirect from="/*" to="home" component={Home} exact/>
       </Switch>
     </div>

@@ -3,6 +3,7 @@ import {withRouter} from 'react-router-dom';
 import './Dest.css';
 import Axios from 'axios';
 import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 class Dest extends Component {
     constructor() {
         super();
@@ -10,11 +11,13 @@ class Dest extends Component {
             navs: [
                 {
                     iconnav: '/img/group1.png',
-                    title: '门票'
+                    title: '门票',
+                    // path:'/'
                 },
                 {
                     iconnav: '/img/group2.png',
-                    title: '酒店'
+                    title: '酒店',
+                    path:'/hotel'
                 },
                 {
                     iconnav: '/img/group3.png',
@@ -67,11 +70,16 @@ class Dest extends Component {
             item.iconnav = require("../../assets" + item.iconnav);
         })
         this.gotoScenic = this.gotoScenic.bind(this);
+        this.toHotel = this.toHotel.bind(this);
     }
     gotoScenic(){
         let {history,match} = this.props;
         console.log("-------",this.props)
         history.push('/scenicmore')
+    }
+    toHotel(path){
+        let {history} =this.props;
+        history.push(path)
     }
     componentDidMount(){
         let that = this;
@@ -88,6 +96,7 @@ class Dest extends Component {
         let { navs, recommends,local } = this.state;
         return (
             <div className="dest">
+                <Header></Header>
                 <div className="city" style={{ background: 'url(https://image.yktour.com.cn/g1/M00/06/51/CgAMDFwjXw-AeD8FAAAbMAdsA5E636.jpg) 0px 0px / 100% 100% no-repeat' }}>
                     <div className="left">
                         <p>欢迎来到</p>
@@ -106,7 +115,7 @@ class Dest extends Component {
                     {
                         navs.map((item, idx) => {
                             return (
-                                <div className="box" key={idx}>
+                                <div className="box" key={idx} onClick={this.toHotel.bind(this,item.path)}>
                                     <img src={item.iconnav} alt="" />
                                     <p>{item.title}</p>
                                 </div>

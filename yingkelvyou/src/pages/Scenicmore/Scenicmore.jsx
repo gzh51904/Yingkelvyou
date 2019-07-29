@@ -77,14 +77,14 @@ class Scenicmore extends Component {
                 </div>
                 <div className="List-nav">
                     <ul>
-                        <li>主题<Icon type="caret-down" /></li>
-                        <li>距离范围<Icon type="caret-down" /></li>
-                        <li>智能排序<Icon type="caret-down" /></li>
+                        <li><span>主题</span> <Icon type="caret-down" /></li>
+                        <li><span>距离范围</span> <Icon type="caret-down" /></li>
+                        <li><span>智能排序</span> <Icon type="caret-down" /></li>
                         <li>
                             {
                                 isok ?<img src={imgGou2} alt="" onClick={this.show}/>:<img src={imgGou1} alt="" onClick={this.show}/>
                             }
-                            今日可定
+                            <span>今日可定</span>
                         </li>
                     </ul>
                 </div>

@@ -32,9 +32,11 @@
     width: .5rem;
     height: .5rem;
 }
-.recommend{
+.contain .recommend{
     padding-left: .4666666666666667rem;
-    margin-top: .6rem;
+    margin-top: .7rem;
+    font-size: .32rem;
+    color:#515a6e;
 }
 .recommendListBox{
     padding-left: .4666666666666667rem;
