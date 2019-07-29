@@ -121,6 +121,7 @@
     height: 1.3333333333333333rem;
     border-radius: 50%;
     margin-bottom: .10666666666666667rem;
+    display: inline-block;
 }
 .iconnavibox p{
     text-align: center;

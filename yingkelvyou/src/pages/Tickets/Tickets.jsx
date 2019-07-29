@@ -143,11 +143,16 @@ class Tickets extends Component {
 
         }
         this.goto = this.goto.bind(this)
+        // this.back = this.back.bind(this)
     }
     goto(path) {
         let { history } = this.props
-        history.goBack();
+        history.push(path);
     }
+    // back(){
+    //     let {history} = this.props;
+    //     history.goBack();
+    // }
     render() {
         let { navs, scenic, tabs, data,data2 } = this.state
         let { url, path } = this.props.match
@@ -155,7 +160,7 @@ class Tickets extends Component {
         return (
             <div className="Tickets">
                 <div className="header">
-                    <img src={require("../../images/left.png")} alt="" className="icon4" onClick={this.goto} />
+                    <img src={require("../../images/left.png")} alt="" className="icon4" onClick={this.goto.bind(this, '/home')} />
                     <form>
                         <input type="search" className="search1" placeholder="搜索目的地/关键词" onClick={this.goto.bind(this, '/searchPage')} />
                     </form>
