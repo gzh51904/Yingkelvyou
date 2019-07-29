@@ -1,0 +1,138 @@
+.goodsList {
+    .header {
+        align-items: center;
+        color: #fff;
+        background-image: linear-gradient(110deg, #d11aab, #a50b73);
+        box-sizing: border-box;
+        display: flex;
+        font-size: .42666667rem;
+        height: 1.12rem;
+        line-height: 1.12rem;
+        padding: 0 .13333333333333333rem;
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: -1px;
+
+
+        h2 {
+            font-size: .4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 400;
+            flex: 1;
+            color: #fff;
+        }
+    }
+
+    .listTab {
+        ul {
+            background: #fff;
+            display: flex;
+            overflow: scroll;
+            width: 100%;
+            overflow: auto;
+            border-bottom: 1px solid #ccc;
+
+            .active {
+                border-bottom: 1px solid #c21598;
+                color: #c21598;
+            }
+
+            li {
+                flex: 1;
+                width: 22%;
+                min-width: 22%;
+                max-width: 22%;
+                padding-bottom: .13333333333333333rem;
+                text-align: center;
+
+                span {
+                    display: inline-block;
+                    margin-top: .2rem;
+                    height: .6133333333333333rem;
+                    line-height: .6133333333333333rem;
+                    width: 100%;
+                    text-align: center;
+                    font-size: .37333333rem;
+                    text-align: center;
+                }
+
+            }
+
+        }
+    }
+
+    .list {
+        border-bottom: .26666666666666666rem solid #f5f5f7;
+
+        .top {
+            display: flex;
+            padding: 0 4.266px;
+            padding: 0 .26666666666666666rem;
+            height: 20.48px;
+            height: 1.28rem;
+            line-height: 20.48px;
+            line-height: 1.28rem;
+            border-bottom: 1px solid #dcdcdc;
+
+            p:first-child {
+                color: #4c4c4c;
+                flex: 1;
+                img{
+                    width: .5333333333333333rem;                    vertical-align: middle;
+                }
+            }
+
+            p:nth-child(2) {
+                flex: 1;
+                font-size: .4rem;
+                color: #a50b73;
+                text-align: center;
+            }
+
+            p:nth-child(3) {
+                flex: 2.5;
+                text-align: right;
+                color: #999;
+            }
+        }
+
+        .middle {
+            border-bottom: 1px solid #dcdcdc;
+            padding: 3.626px 6.4px 6.186px;
+            padding: .22666666666666666rem .4rem .38666666666666666rem;
+            position: relative;
+
+            p:nth-child(1) {
+                display: flex;
+                line-height: .6666666666666666rem;
+                font-size: .4rem;
+                color: #4c4c4c;
+                margin-bottom: .26666666666666666rem;
+
+                span:nth-child(1) {
+                   flex:1; 
+                }
+
+                span:nth-child(2) {
+
+                    text-align: right;
+                    color: red;
+                }
+            }
+            p:nth-child(2){
+                line-height: .3466666666666667rem;
+                color: #969696;
+                font-size: .32rem;
+            }
+
+        }
+    }
+
+
+
+
+
+}

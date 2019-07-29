@@ -1,0 +1,165 @@
+.mine{
+    .userInfo{
+      width: 100%;
+      height: 108px;
+      background: #c00194;  
+      position: relative;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0 0;
+      border-bottom-right-radius: 50% 9%;
+      border-bottom-left-radius: 50% 9%;
+      overflow: hidden;
+
+
+      span{
+        font-size: .6rem;
+        display: block;
+        padding:5px;
+      }
+
+      .imgVip{
+        width: 82.346px;
+        width: 5.1466666666666665rem;
+        height: 70.613px;
+        height: 4.413333333333333rem;
+        background-size: 100%;
+        position: absolute;
+        -webkit-animation: bounce-data-v-bb38e908 5s ease-in forwards;
+        animation: bounce-data-v-bb38e908 5s ease-in forwards;
+        right: -1.8666666666666667rem;
+        bottom: -2.6666666666666665rem;
+        background-image: url(../../images/ia_8.png);
+    
+      }
+
+      .qiu1{
+        width: 16.426px;
+        width: 1.0266666666666666rem;
+        height: 16.426px;
+        height: 1.0266666666666666rem;
+        position: absolute;
+        left: 57.173px;
+        left: 3.5733333333333333rem;
+        top: 2.133px;
+        top: .13333333333333333rem;
+        border-radius: 1.0266666666666666rem;
+        opacity: .25;
+        background-image: linear-gradient(138deg,rgba(255,114,40,.46),#ff9090);
+      }
+
+      .qiu2{
+        width: 8.96px;
+        width: .56rem;
+        height: 8.96px;
+        height: .56rem;
+        position: absolute;
+        left: 81.066px;
+        left: 5.066666666666666rem;
+        top: 29.866px;
+        top: 1.8666666666666667rem;
+        border-radius: .56rem;
+        opacity: .08;
+        background-image: linear-gradient(116deg,hsla(0,0%,100%,0),#fff);
+      }
+
+      .qiu3{
+        width: 29.866px;
+        width: 1.8666666666666667rem;
+        height: 29.866px;
+        height: 1.8666666666666667rem;
+        position: absolute;
+        left: 38.4px;
+        left: 2.4rem;
+        top: 36.266px;
+        top: 2.2666666666666666rem;
+        border-radius: 1.8666666666666667rem;
+        opacity: .17;
+        background-image: linear-gradient(123deg,#ff67e8,#c31f9b);
+      }
+
+
+
+      .logAndReg{
+          .head{
+              margin:0 .3rem;
+              color: #fff;
+          }
+          .ant-avatar-icon{
+            border-radius: 50%;
+            background:rgb(209, 208, 208);
+          }
+          .login{
+              margin:.3rem .1rem;
+              font-size: .4rem;
+              color: #fff;
+              background: #c5129a;
+
+          }
+      }
+    }
+
+    .list{
+        width: 100%;
+        height: 45px;
+        // background: #12d;
+        padding:0 0 0 85px; 
+
+        .myList{
+            float: left;
+            font-size: .4rem;
+            line-height: 45px;
+            color:rgb(209, 71, 28);
+            width: 161px;
+            
+
+        }
+        .goodsList{
+            font-size: .4rem;
+            float: left;
+            line-height: 45px;
+            color:rgb(59, 76, 230);
+            width: 161px;
+
+
+
+
+        }
+
+
+    }
+
+    .myHelper{
+        font-size: .4rem;
+        font-weight: 500;
+        color: #333;
+        height: 1.04rem;
+        line-height: 1.04rem;
+        padding-left: .4666666666666667rem;
+        border-bottom: 1px solid #ccc;
+        
+    }
+
+    .serviceNav{
+        ul{
+            width: 100%;
+            height: 93px;
+            li{
+                width: 25%;
+                height: 90px;
+                float: left;
+                text-align: center;
+                padding:15px 0;
+                font-size: .8rem;
+               
+                
+                p{
+                    text-align: center;
+                    font-size: .32rem;
+                }
+            }
+        }
+    }
+        
+
+
+}

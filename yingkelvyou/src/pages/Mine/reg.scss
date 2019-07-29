@@ -1,0 +1,75 @@
+.reg{
+    .header{
+        text-align: center;
+        position: relative;
+        height: 1.17333rem;
+        background-image: linear-gradient(98deg,#d11aab,#a50b73);
+        color: #fff;
+        font-size: 18px;
+
+        .back{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.17333rem;
+            height: 1.17333rem;
+            padding: .26667rem;
+        }
+        span{
+            width: 40%;
+            margin: 0 auto;
+            height: 1.17333rem;
+            font-size: 17px;
+            line-height: 1.17333rem;
+            overflow: hidden;
+        }
+    }
+    .main{
+        margin: 0 27.6px;
+
+        ul{
+            li{
+                height: 1.4133333333333333rem;
+                border-bottom: 1px solid #969696;
+                padding: .4666666666666667rem 0;
+                font-size: .45333333rem;
+                position: relative;
+                input{
+                    width: 100%;
+                    border:0 none;
+                    outline:none;
+                }
+                .timeCode{
+                    position: absolute;
+                    right: 0;
+                    top: .26666666666666666rem;
+                    height: .88rem;
+                    line-height: .88rem;
+                    border: 1px solid #969696;
+                    border-radius: .13333333333333333rem;
+                    padding: 0 .13333333333333333rem;
+                }
+            }
+        }
+
+        .regBtn{
+            height: 1.4133333333333333rem;
+            line-height: 1.4133333333333333rem;
+            background: #d423a9;
+            color: #fff;
+            text-align: center;
+            border-radius: .13333333333333333rem;           font-size: 7.253px;
+            font-size: .45333333rem;
+            margin: .8rem;
+        }
+    }
+    .agree{
+        text-align: center;
+        span{
+            color:#c31f9b;
+
+            
+        }
+    }
+
+}

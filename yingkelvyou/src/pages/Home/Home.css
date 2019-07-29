@@ -28,6 +28,7 @@ nav .navList li img {
     width: 1.1733333333333333rem;
     height: 1.1733333333333333rem;
     border-radius: 50%;
+    margin:0 auto;
 }
 
 nav .navList li p {
