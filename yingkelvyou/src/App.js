@@ -1,10 +1,18 @@
 import React from 'react';
 import './css/app.css'
 import Home from './pages/Home/Home.jsx'
-import SearchPage from './pages/SearchPage/SearchPage.jsx'
-import Tickets from './pages/Tickets/Tickets.jsx'
-import Details from './pages/Details/Details.jsx'
+import Mine from './pages/Mine/Mine.jsx'
+import Login from './pages/Mine/login.jsx'
+import MyMsg from './pages/Mine/myMsg.jsx'
+import AllList from './pages/Mine/allList.jsx'
+import GoodsList from './pages/Mine/goodsList.jsx'
+import Shop from './pages/Mine/shop.jsx'
 
+import Dest from './pages/Destination/Dest.jsx'
+import Hotel from './pages/Hotel/Hotel.jsx'
+import Scenicmore from './pages/Scenicmore/Scenicmore.jsx'
+import SearchPage from './pages/SearchPage/SearchPage.jsx'
+import './assets/js/rem'
 import 'lib-flexible'
 import {Route, Switch, Redirect} from 'react-router-dom'
 // import './rem.js'
@@ -16,6 +24,16 @@ function App() {
         <Route path='/searchPage' component={SearchPage} />
         <Route path='/tickets' component={Tickets} />
         <Route path='/details'component={Details}/>
+	      <Route path='/mine' component={Mine}/>
+	      <Route path='/mymsg' component={MyMsg}/>
+	      <Route path='/allList' component={AllList}/>
+	      <Route path='/goodsList' component={GoodsList}/>
+        <Route path='/login' component={Login}/>
+        <Route path='/shop' component={Shop}/>
+        <Route path='/SearchPage' component={SearchPage} />
+        <Route path ='/dest' component={Dest}/>
+        <Route path ='/hotel' component={Hotel}/>
+        <Route path ='/scenicmore' component={Scenicmore}/>
         <Redirect from="/*" to="home" component={Home} exact/>
       </Switch>
     </div>

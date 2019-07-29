@@ -1,0 +1,68 @@
+.goodsList{
+    .header{
+        align-items: center;
+        color: #fff;
+        background-image: linear-gradient(110deg,#d11aab,#a50b73);
+        box-sizing: border-box;
+        display: flex;
+        font-size: .42666667rem;
+        height: 1.12rem;
+        line-height: 1.12rem;
+        padding: 0 .13333333333333333rem;
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: -1px;
+
+
+        h2{
+            font-size: .4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 400;
+            flex: 1;
+            color:#fff;
+        }
+    }
+
+    .listTab{
+        ul{
+            background: #fff;
+            display: flex;
+            overflow: scroll;
+            width: 100%;
+            overflow: auto;
+            border-bottom: 1px solid #ccc;
+            .active{
+                border-bottom: 1px solid #c21598;
+                color:#c21598;
+            }
+            li{
+                flex: 1;
+                width: 22%;
+                min-width: 22%;
+                max-width: 22%;
+                padding-bottom: .13333333333333333rem;
+                text-align: center;
+                span{
+                    display: inline-block;
+                    margin-top: .2rem;
+                    height: .6133333333333333rem;
+                    line-height: .6133333333333333rem;
+                    width: 100%;
+                    text-align: center;
+                    font-size: .37333333rem;
+                    text-align: center;
+                }
+
+            }
+            
+        }
+    }
+
+
+
+
+
+}

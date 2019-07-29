@@ -1,0 +1,71 @@
+.msgList{
+    .header{
+        align-items: center;
+        color: #fff;
+        background-image: linear-gradient(110deg,#d11aab,#a50b73);
+        box-sizing: border-box;
+        display: flex;
+        font-size: .42666667rem;
+        height: 1.12rem;
+        line-height: 1.12rem;
+        padding: 0 .13333333333333333rem;
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: -1px;
+
+
+        h2{
+            font-size: .4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 400;
+            flex: 1;
+            color:#fff;
+        }   
+ 
+    }
+    .tabNav{
+        background-color: #fff;
+        text-align: center;
+        // ul{
+        //    display:flex;
+        //     li{
+        //         width: 33.2%;
+        //         font-size: .32rem;
+        //         line-height: 1;
+        //         flex:1;
+        //         padding: .4121212121212121rem 0;
+        //         font-size: .4rem;
+        //         span{
+        //             color: inherit;
+        //             font-size: .32rem;
+        //             line-height: 1;
+        //         }
+        //     }
+        // }
+
+        .ant-tabs-nav{
+            .ant-tabs-tab{
+                margin:0;
+                padding:10px 34px;
+            }
+            .ant-tabs-tab-active{
+                color: #a50b73;
+            } 
+            .ant-tabs-ink-bar-animated{
+                background: #a50b73;
+        }
+        } 
+        
+    }
+    
+}
+
+
+
+
+
+
+
