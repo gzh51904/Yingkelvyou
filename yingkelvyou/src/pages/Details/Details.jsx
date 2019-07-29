@@ -2,16 +2,36 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 
 import './Details.css'
+import Axios from 'axios';
 
 class Details extends Component {
     constructor() {
         super()
         this.back = this.back.bind(this)
+        this.addIndent = this.addIndent.bind(this)
 
     }
-    back(){
-        let {history} = this.props;
+    back() {
+        let { history } = this.props;
         history.goBack();
+    }
+    addIndent(data) {
+        console.log('------------', data)
+        let { history } = this.props;
+        let uname = localStorage.getItem('uphone');
+        if (uname) {
+            let datas = {
+                uphone:uname,
+                title: data.title,
+                price: data.price
+            }
+            Axios.post('http://39.107.12.210:1904/goods',datas).then(({data})=>{
+                console.log('data',data)
+            })
+        }else{
+            history.push('/login')
+        }
+
     }
     render() {
         let { state } = this.props.location
@@ -103,7 +123,7 @@ class Details extends Component {
                         </span>
                     </p>
                 </div>
-                <div className="right">立即预定</div>
+                <div className="right" onClick={this.addIndent.bind(this, state)}>立即预定</div>
             </div>
         </div>)
     }
