@@ -1,0 +1,414 @@
+.dest{
+    margin-bottom: 1.3333333333333333rem;
+}
+.dest ul {
+    list-style: none;
+}
+
+.city {
+    height: 2.1333333333333333rem;
+    display: flex;
+}
+.city .left{
+    -webkit-box-flex: 11;
+    flex: 11;
+    padding: .26666666666666666rem 0 0 .8rem;
+    color: #fff;
+    font-size: .32rem;
+}
+.city .right{
+    -webkit-box-flex: 4;
+    flex: 4;
+    color: #fff;
+    margin-top: 1.2266666666666666rem;
+}
+.city .left p{
+    margin: 0;
+    padding: 0;
+}
+.city .left p:nth-child(2) {
+    font-size: .42666667rem;
+}
+.city .left ul{
+    margin: 0;
+    padding: 0;
+}
+.city .left li {
+    display: inline-block;
+    padding: 0 .05333333333333334rem;
+    margin-right: .10666666666666667rem;
+    border: 1px solid #fff;
+    border-radius: .16rem;
+    line-height: 1.5;
+    font-size: 0.32rem;
+}
+.city .left .tabCity{
+    font-size: .26666667rem;
+    margin-left: .16rem;
+    margin-right: .16rem;
+}
+.city .right p{
+    height: .5333333333333333rem;
+    width: 1.7333333333333334rem;
+    line-height: .5333333333333333rem;
+    text-align: center;
+    border-radius: .26666666666666666rem;
+    font-size: .32rem;
+    background: -webkit-gradient(linear,right top,left top,from(#b9329d),to(#982272));
+    background: linear-gradient(270deg,#b9329d,#982272);
+}
+
+
+/* -----------------------------------------------------导航-------------------------------------------------------------------- */
+
+.iconnavi {
+    display: -webkit-box;
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    border-bottom: .26666666666666666rem solid #f7f7f7;
+    padding-bottom: .4266666666666667rem;
+}
+.iconnavi .box {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 22%;
+    min-width: 22%;
+    max-width: 22%;
+    margin-top: .5333333333333333rem;
+    text-align: center;
+}
+.iconnavi .box img {
+    width: 1.3333333333333333rem;
+    height: 1.3333333333333333rem;
+    border-radius: 50%;
+    margin-bottom: .10666666666666667rem;
+    display: inline-block;
+}
+.iconnavi .box p {
+    margin-bottom: 0;
+    font-size: .32rem;
+}
+
+
+
+/* -------------------------------------------------必去景点-------------------------------------------------------- */
+.scenic {
+    border-bottom: .26666666666666666rem solid #f7f7f7;
+    padding: 0 .21333333333333335rem;
+}
+.scenic .title {
+    text-align: center;
+    margin: .8rem 0 .4rem;
+    font-weight: 700;
+    font-size: .42666667rem;
+}
+.scenic .title span {
+    margin: 0 .26666666666666666rem;
+}
+.scenic .scenic-pic {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.scenic .scenic-pic .box {
+    -webkit-box-flex: 1;
+    flex: 1;
+    margin: 0 .10666666666666667rem;
+    text-align: center;
+}
+.scenic .scenic-pic .box img {
+    width: 100%;
+    height:2.6133333333333333rem;
+    border-radius: .21333333333333335rem;
+}
+.scenic .scenic-pic .box p{
+    font-size: .37rem;
+}
+.scenic .more {
+    margin: .8rem 0 .4533333333333333rem;
+    text-align: center;
+    font-size: .37333333rem;
+}
+
+
+/* ------------------------------------------------------------广州地图---------------------------------------------------------------- */
+
+.dest .citymap {
+    border-bottom: .26666666666666666rem solid #f7f7f7;
+    padding: 0 .21333333333333335rem;
+}
+.dest .citymap .title {
+    text-align: center;
+    margin: .8rem 0 .4rem;
+    font-weight: 700;
+    font-size: .42666667rem;
+}
+.dest .citymap .title span {
+    margin: 0 .26666666666666666rem;
+}
+.dest .citymap .map-box {
+    width: 100%;
+    height: 3.6rem;
+    border: .02666666666666667rem solid #ccc;
+    margin-bottom: .9333333333333333rem;
+    position: relative;
+}
+.dest .citymap .map-box .map {
+    height: 3.6rem;
+    background: url(../../assets/img/bddt.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.dest .citymap .map-box .sousou {
+    width: 8.24rem;
+    height: 2.6133333333333333rem;
+    padding: .26666666666666666rem .4rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: .4533333333333333rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.3066666666666666rem;
+    margin-left: -4.12rem;
+    left: 50%;
+}
+.dest .citymap .map-box .sousou .citys {
+    position: relative;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: .13333333333333333rem;
+    font-size: .4rem;
+    height: 1.4533333333333334rem;
+    line-height: 1.4533333333333334rem;
+}
+.dest .citymap .map-box .sousou .citys span, .dest .citymap .map-box .sousou .citys span img {
+    width: .7466666666666667rem;
+    height: .7466666666666667rem;
+}
+.dest .citymap .map-box .sousou .local-num {
+    font-size: .32rem;
+}
+.dest .citymap .map-box .sousou .local-num span:nth-last-child(n+2) {
+    margin-right: .4rem;
+}
+.dest .citymap .map-box .map-bottom {
+    line-height: .9333333333333333rem;
+    position: relative;
+}
+.dest .citymap .map-box .map-bottom span {
+    display: inline-block;
+    width: 33%;
+    font-size: .37333333rem;
+}
+.recommend {
+    margin: 0;
+    padding: 0;
+}
+.dest .citymap .recommend .re-title {
+    border-top: .02666666666666667rem solid #ccc;
+    padding-top: .5066666666666667rem;
+    margin-bottom: .29333333333333333rem;
+    font-size: .37333333rem;
+}
+.dest .citymap .recommend .product {
+    padding-left: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.dest .citymap .recommend .product .pro-item {
+    display: inline-block;
+    width: 3.7333333333333334rem;
+    margin-right: .26666666666666666rem;
+}
+.dest .citymap .recommend .product .pro-item img {
+    width: 100%;
+    height: 3.2rem;
+    border-radius: .21333333333333335rem;
+}
+.dest .citymap .recommend .product .pro-item .name {
+    width: 100%;
+    min-height: 1.0666666666666667rem;
+    line-height: .6rem;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.dest .citymap .recommend .product .pro-item .desc {
+    text-align: right;
+    position: relative;
+    height: .5333333333333333rem;
+    line-height: .5333333333333333rem;
+    margin-bottom: .3466666666666667rem;
+}
+.dest .citymap .recommend .product .pro-item .desc span:first-child {
+    font-size: .32rem;
+    color: #7c7c7c;
+    position: absolute;
+    left: 0;
+}
+.dest .citymap .recommend .product .pro-item .desc span:nth-child(2) {
+    font-size: .32rem;
+    color: #ea3323;
+}
+.dest .citymap .recommend .product .pro-item .desc span:nth-child(3) {
+    font-size: .42666667rem;
+    color: #ea3323;
+    margin: 0 .08rem;
+}
+.dest .citymap .recommend .product .pro-item .desc span:nth-child(4) {
+    font-size: .32rem;
+    color: #7c7c7c;
+}
+
+
+
+/* --------------------------------------------------大家都在玩---------------------------------------------------------- */
+
+.dest .hot {
+    border-bottom: .26666666666666666rem solid #f7f7f7;
+    padding: 0 .21333333333333335rem;
+}
+.dest .hot .title {
+    text-align: center;
+    margin: .8rem 0 .4rem;
+    font-weight: 700;
+    font-size: .42666667rem;
+}
+.dest .hot .title span {
+    margin: 0 .26666666666666666rem;
+}
+.dest .hot .hot-list{
+    padding: 0;
+}
+.dest .hot .hot-list li {
+    border-bottom: 1px solid #ccc;
+    margin-top: .48rem;
+}
+.dest .hot .hot-list li .pic {
+    width: 9.466666666666667rem;
+    height: 3.8133333333333335rem;
+    border-radius: .10666666666666667rem;
+    position: relative;
+    overflow: hidden;
+}
+.dest .hot .hot-list li .pic img {
+    width: 100%;
+    height: 100%;
+}
+.dest .hot .hot-list li .pic .price {
+    position: absolute;
+    left: 0;
+    top: .4266666666666667rem;
+    height: .7733333333333333rem;
+    line-height: .7733333333333333rem;
+    text-align: center;
+    width: 2.4rem;
+    background: -webkit-gradient(linear,left top,right top,from(#b9329d),to(#e890b8));
+    background: linear-gradient(90deg,#b9329d,#e890b8);
+    border-top-right-radius: .37333333333333335rem;
+    border-bottom-right-radius: .37333333333333335rem;
+    color: #fff;
+}
+.dest .hot .hot-list li .pic .price span:nth-child(2) {
+    margin: 0 .04rem;
+    font-size: .37333333rem;
+}
+.dest .hot .hot-list li .pic .desc {
+    position: absolute;
+    right: .37333333333333335rem;
+    bottom: .32rem;
+    color: #fff;
+}
+.dest .hot .hot-list li .hot-title {
+    font-size: .4rem;
+    margin: .32rem 0 .13333333333333333rem;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.dest .hot .more {
+    margin: .4rem 0;
+    text-align: center;
+    font-size: .37333333rem;
+}
+
+
+/* --------------------------------------------------当地推荐----------------------------------------------------- */
+
+.dest .local {
+    border-bottom: .26666666666666666rem solid #f7f7f7;
+    padding: 0 .21333333333333335rem;
+}
+.dest .local .title {
+    text-align: center;
+    margin: .8rem 0 .4rem;
+    font-weight: 700;
+    font-size: .42666667rem;
+}
+
+.dest .local .title span {
+    margin: 0 .26666666666666666rem;
+}
+.dest .local .local-content ul {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+}
+.dest .local .local-content ul li {
+    width: 4.586666666666667rem;
+    min-width: 4.586666666666667rem;
+    margin-bottom: .4266666666666667rem;
+}
+.dest .local .local-content ul li img {
+    width: 100%;
+    height: 3.3333333333333335rem;
+    border-radius: .16rem;
+}
+.dest .local .local-content ul li .local-title {
+    margin-top: .16rem;
+    display: -webkit-box;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.dest .local .local-content ul li .desc {
+    text-align: right;
+    position: relative;
+    height: .5333333333333333rem;
+    line-height: .5333333333333333rem;
+    margin-top: .21333333333333335rem;
+}
+.dest .local .local-content ul li .desc span:first-child {
+    font-size: .32rem;
+    color: #7c7c7c;
+    position: absolute;
+    left: 0;
+}
+.dest .local .local-content ul li .desc span:nth-child(2) {
+    font-size: .32rem;
+    color: #ea3323;
+}
+.dest .local .local-content ul li .desc span:nth-child(3) {
+    font-size: .42666667rem;
+    color: #ea3323;
+    margin: 0 .08rem;
+}
+.dest .local .local-content ul li .desc span:nth-child(4) {
+    font-size: .32rem;
+    color: #7c7c7c;
+}

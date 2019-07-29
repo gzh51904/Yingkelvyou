@@ -15,21 +15,24 @@
     border-radius: .3466666666666667rem;
     border: 0 none;
     box-sizing: border-box;
+    margin: 0;
+    margin-left:.5rem;
+    outline:none;
 }
 .search .icon1{
     width: .5rem;
     height: .5rem;
     position: absolute;
-    left: .8rem;
-    top: .3333333333333333rem;
+    left: .7rem;
+    top: .19333333333333333rem;
     z-index: 19999;
 }
 .custiomerService{
     display: inline-block;
     width: .7rem;
     height: .7rem;
-    padding-left: .21333333333333335rem;
-    padding-bottom: .05333333333333334rem;
+    margin-left: .21333333333333335rem;
+    margin-bottom: .05333333333333334rem;
     vertical-align: middle;
     position: relative;
 }

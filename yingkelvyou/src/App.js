@@ -7,8 +7,13 @@ import MyMsg from './pages/Mine/myMsg.jsx'
 import AllList from './pages/Mine/allList.jsx'
 import GoodsList from './pages/Mine/goodsList.jsx'
 import Shop from './pages/Mine/shop.jsx'
+
+import Dest from './pages/Destination/Dest.jsx'
+import Hotel from './pages/Hotel/Hotel.jsx'
+import Scenicmore from './pages/Scenicmore/Scenicmore.jsx'
 import SearchPage from './pages/SearchPage/SearchPage.jsx'
-import 'lib-flexible'
+import './assets/js/rem'
+// import 'lib-flexible'
 import {Route, Switch, Redirect} from 'react-router-dom'
 
 function App() {
@@ -23,6 +28,9 @@ function App() {
         <Route path='/login' component={Login}/>
         <Route path='/shop' component={Shop}/>
         <Route path='/SearchPage' component={SearchPage} />
+        <Route path ='/dest' component={Dest}/>
+        <Route path ='/hotel' component={Hotel}/>
+        <Route path ='/scenicmore' component={Scenicmore}/>
         <Redirect from="/*" to="home" component={Home} exact/>
       </Switch>
     </div>
