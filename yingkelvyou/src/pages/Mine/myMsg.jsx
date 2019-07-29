@@ -28,7 +28,7 @@ const { TabPane } = Tabs;
                     <i onClick={this.goto.bind(this,'/Mine')}><Icon type="left" /></i>
                     <h2  className="fl">我的消息</h2>
                 </div>
-                <div className="tabNav">
+                <div id="tabNav">
                         {/* <ul>
                             <li><span>优惠活动</span></li>
                             <li><span>订单信息</span></li>

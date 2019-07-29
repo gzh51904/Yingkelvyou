@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Icon} from 'antd';
+import { Icon } from 'antd';
 import '../../css/reset.css';
 import './allList.scss';
 import '../../assets/js/rem.js';
@@ -14,17 +14,25 @@ class List extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            currentIndex: 0
+            currentIndex: 0,
+            data: [
+                {
+                    "listNum": "123456789",
+                    "listHead": "珠江夜游（金航游轮）",
+                    "listDate": "2019-07-31",
+                    "price": "60"
+                }
+            ]
         }
         this.setCurrentIndex = this.setCurrentIndex.bind(this)
         this.goto = this.goto.bind(this)
     }
 
-    goto(path){
-        let {history} = this.props
+    goto(path) {
+        let { history } = this.props
         history.push(path)
     }
-    
+
 
     setCurrentIndex(event) {
         this.setState({
@@ -46,10 +54,12 @@ class List extends Component {
 
         }
 
+        let {data} = this.state;
+
         return (
             <div className="goodsList">
                 <div className="header">
-                    <i onClick={this.goto.bind(this,'/Mine')}><Icon type="left" /></i>
+                    <i onClick={this.goto.bind(this, '/Mine')}><Icon type="left" /></i>
                     <h2 className="fl">全部订单</h2>
                 </div>
 
@@ -66,7 +76,37 @@ class List extends Component {
 
                     {/* 订单 */}
                     <div className="list">
-                        <div className="top">                      
+                        {
+                            data.map((Item, idx) => {
+                                return (
+                                    <div>
+                                        <div className="top">
+                                            <p><img src={imgurl} alt="" />门票</p>
+                                            <p>已取消</p>
+                                            <p>订单号：{Item.listNum}</p>
+                                        </div>
+
+                                        <div className="middle">
+                                            <p>
+                                                <span>{Item.listHead}</span>
+                                                <span>￥{Item.price}</span>
+                                            </p>
+
+                                            <p>{Item.listHead}{Item.listDate}</p>
+                                        </div>
+
+                                        <div className="btn">
+
+                                        </div>
+                                    </div>
+
+                                )
+                            })
+                        }
+
+
+
+                        {/* <div className="top">                      
                             <p><img src={imgurl} alt=""/>门票</p>
                             <p>已取消</p>
                             <p>订单号：123456789</p>
@@ -83,7 +123,7 @@ class List extends Component {
 
                         <div className="btn">
 
-                        </div>
+                        </div> */}
 
                     </div>
 
